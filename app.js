@@ -24,9 +24,9 @@ import contriRoutes from "./routes/contriRoutes.js"
 // // router middleware
 app.use("/api/v1",contriRoutes);
 
-app.use('/',(req,res)=>{
-    res.send("Welcome to the Project")
-})
+app.get('/', (req, res) => {
+    res.send("Welcome to the Project");
+});
 
 
 export default app;
